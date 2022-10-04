@@ -11,7 +11,7 @@ class BookingRepository implements BookingRepositoryContract
     {
         return Booking::create([
             'customer_id' => $data['customer_id'],
-            'room_id' => $data['customer_id'],
+            'room_id' => $data['room_id'],
             'check_in' => $data['check_in'],
             'check_out' => $data['check_out'],
         ]);
