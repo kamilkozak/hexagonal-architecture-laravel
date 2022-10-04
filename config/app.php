@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => (bool)env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -194,6 +194,14 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        /*
+         * Custom Service Providers
+         */
+        \Src\Booking\Application\Providers\BookingServiceProvider::class,
+        \Src\Room\Application\Providers\RoomServiceProvider::class,
+        \Src\Customer\Application\Providers\CustomerServiceProvider::class,
+        \Src\Payment\Application\Providers\PaymentServiceProvider::class,
 
     ],
 
